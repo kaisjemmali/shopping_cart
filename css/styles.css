@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  /* background-color: whitesmoke; */
+}
+/*Main Styling*/
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 86%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.totals_shopping {
+  width: 28%;
+  min-height: 600px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+}
+#all_products {
+  display: flex;
+  flex-direction: column;
+  width: 66%;
+  margin-bottom: 80px;
+}
+/*Heading Styling*/
+.total_header {
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+.main_header {
+  margin-top: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+/*Images Styling*/
+.img_product {
+  width: 100px;
+  height: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Product Styling*/
+.left_side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 66%;
+  border-right: solid 1px gainsboro;
+}
+.par_product {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.product_section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  border: solid 1px gainsboro;
+  padding: 10px;
+}
+/*Right side Styling*/
+.right_side {
+  width: 32%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top_right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.fa-regular {
+  font-size: 22px;
+  cursor: pointer;
+}
+.add_qtity {
+  display: flex;
+}
+.price_product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right_price {
+  margin-top: 30px;
+  text-align: center;
+  font-weight: 800;
+}
+.tot_pdct_price {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+.product_price {
+  font-size: 30px;
+}
+.add_qtity {
+  display: flex;
+  justify-content: space-around;
+  border: solid 1px green;
+  border-radius: 10px;
+}
+.qtity {
+  font-size: 20px;
+  font-weight: 600;
+}
+.btn_add {
+  background-color: white;
+  border: none;
+  font-size: 22px;
+  font-weight: 900;
+  cursor: pointer;
+}
+/*Aside Styling*/
+
+.tot_pce_img {
+  width: 30px;
+  height: 30px;
+}
+.tot_prdct {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.tot_price {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+.tot_price_pdct {
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+hr {
+  margin-top: 50px;
+}
+.tot_shopp_pdct {
+  margin-top: 50px;
+}
+.tot_tot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 700;
+}
+.totalProductPrice {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+  font-size: 20px;
+}
+.tot_prices {
+  padding-right: 5px;
+}
