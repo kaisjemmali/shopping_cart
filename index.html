@@ -16,6 +16,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .red {
+        color: red;
+      }
+    </style>
     <title>Shopping Cart</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
   </head>
@@ -31,9 +36,7 @@
               alt="Xbox Serie X"
             />
             <p class="par_product">Xbox X Series</p>
-            <p class="par_product">
-              Price : <span class="price">2000</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s1">2000</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -42,14 +45,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t1">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m1" onclick="minusClick(this.id)">-</button>
+              <p id="q1">0</p>
+              <button id="p1" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -61,9 +62,7 @@
               alt="Xbox Serie S"
             />
             <p class="par_product">Xbox S Series</p>
-            <p class="par_product">
-              Price : <span class="price">1700</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s2">1700</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -72,14 +71,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t2">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m2" onclick="minusClick(this.id)">-</button>
+              <p id="q2">0</p>
+              <button id="p2" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -91,9 +88,7 @@
               alt="Manette Xbox"
             />
             <p class="par_product">Xbox Joystick</p>
-            <p class="par_product">
-              Price : <span class="price">350</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s3">350</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -102,14 +97,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t3">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m3" onclick="minusClick(this.id)">-</button>
+              <p id="q3">0</p>
+              <button id="p3" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -121,9 +114,7 @@
               alt="Xbox Hard Disc"
             />
             <p class="par_product">Xbox External Disc</p>
-            <p class="par_product">
-              Price : <span class="price">290</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s4">290</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -132,14 +123,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t4">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m4" onclick="minusClick(this.id)">-</button>
+              <p id="q4">0</p>
+              <button id="p4" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -151,9 +140,7 @@
               alt="Xbox Abnnement"
             />
             <p class="par_product">Xbox Game Pass 6 Months</p>
-            <p class="par_product">
-              Price : <span class="price">240</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s5">240</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -162,14 +149,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t5">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m5" onclick="minusClick(this.id)">-</button>
+              <p id="q5">0</p>
+              <button id="p5" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -181,9 +166,7 @@
               alt="Xbox Chargedock"
             />
             <p class="par_product">Xbox Chargedock</p>
-            <p class="par_product">
-              Price : <span class="price">130</span> TND
-            </p>
+            <p class="par_product">Price : <span id="s6">130</span> TND</p>
           </div>
           <div class="right_side">
             <div class="top_right">
@@ -192,14 +175,12 @@
             </div>
             <div class="price_product">
               <p class="tot_pdct_price">Total Product Price</p>
-              <p class="right_price">
-                <span class="product_price">0</span> TND
-              </p>
+              <p class="right_price"><span id="t6">0</span> TND</p>
             </div>
             <div class="add_qtity">
-              <button class="minus btn_add">-</button>
-              <p class="qtity">0</p>
-              <button class="plus btn_add">+</button>
+              <button id="m6" onclick="minusClick(this.id)">-</button>
+              <p id="q6">0</p>
+              <button id="p6" onclick="plusClick(this.id)">+</button>
             </div>
           </div>
         </section>
@@ -214,9 +195,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y1">0</span> TND</p>
         </div>
         <div class="tot_prdct_two tot_prdct">
           <img
@@ -225,9 +204,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y2">0</span> TND</p>
         </div>
         <div class="tot_prdct_three tot_prdct">
           <img
@@ -236,9 +213,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y3">0</span> TND</p>
         </div>
         <div class="tot_prdct_four tot_prdct">
           <img
@@ -247,9 +222,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y4">0</span> TND</p>
         </div>
         <div class="tot_prdct_five tot_prdct">
           <img
@@ -258,9 +231,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y5">0</span> TND</p>
         </div>
         <div class="tot_prdct_six tot_prdct">
           <img
@@ -269,9 +240,7 @@
             alt="img xbox x"
           />
           <p class="tot_price">Total Price :</p>
-          <p class="tot_price_pdct">
-            <span class="total_Price_Product">0</span> TND
-          </p>
+          <p class="tot_price_pdct"><span id="y6">0</span> TND</p>
         </div>
         <hr />
         <div class="tot_shopp_pdct">
